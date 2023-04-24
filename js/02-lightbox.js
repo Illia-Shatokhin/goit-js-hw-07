@@ -8,12 +8,6 @@ const listItemString = galleryItems
 
 galleryList.insertAdjacentHTML("afterbegin", listItemString);
 
-galleryList.addEventListener("click", openOriginalSize);
-
-function openOriginalSize(event) {
-    event.preventDefault();
-}
-
 const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: "alt",
     captionDelay: 250,
